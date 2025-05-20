@@ -1,0 +1,30 @@
+Activity.xml
+   <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@drawable/img_4">
+       <TextView android:text="Login Page" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+       <EditText android:hint="Enter Name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+       <Button android:text="Login" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+   </RelativeLayout>
+
+
+MainActivity.java 
+   package com.ashakanoj.program5;
+
+   import androidx.appcompat.app.AppCompatActivity;
+   import android.os.Bundle;
+   import android.widget.Button;
+   import android.widget.EditText;
+   import android.widget.Toast;
+
+   public class MainActivity extends AppCompatActivity {
+       @Override
+       protected void onCreate(Bundle savedInstanceState) {
+           super.onCreate(savedInstanceState);
+           setContentView(R.layout.activity_main);
+           Button loginButton = findViewById(R.id.button);
+           loginButton.setOnClickListener(v -> Toast.makeText(this, "Login Clicked", Toast.LENGTH_SHORT).show());
+       }
+   }
+   
