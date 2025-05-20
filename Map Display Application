@@ -1,0 +1,26 @@
+activity_main.xml
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView android:text="Map will be displayed here"/>
+    </LinearLayout>
+
+    MainActivity.java 
+
+    package com.asha.mapdisplay;
+
+    import androidx.appcompat.app.AppCompatActivity;
+    import android.os.Bundle;
+
+    public class MainActivity extends AppCompatActivity {
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
+            // Logic to display map
+        }
+    }
+    
+
